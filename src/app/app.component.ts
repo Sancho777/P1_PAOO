@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AV1';
+  recomendacoes = []
+  onRecomendacaoInserida(recomendacao){
+    this.recomendacoes = [recomendacao, ...this.recomendacoes]
+  }
 }
